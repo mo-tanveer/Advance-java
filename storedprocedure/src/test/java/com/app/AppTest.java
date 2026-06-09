@@ -1,4 +1,4 @@
-package com.app.jdbcproject;
+package com.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
