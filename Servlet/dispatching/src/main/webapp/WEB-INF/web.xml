@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    version="4.0"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+    http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+
+
+<filter>
+	<filter-name>MyFilter</filter-name>
+	<filter-class>com.app.MyFilter</filter-class>
+</filter>
+
+<filter-mapping>
+	<filter-name>MyFilter</filter-name>
+	<url-pattern>/ValidateServlet</url-pattern>
+</filter-mapping>
+ 
+  <servlet>
+  	<servlet-name>ValidateServlet</servlet-name>
+  	<servlet-class>com.app.ValidateServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddServlet</servlet-name>
+  	<servlet-class>com.app.AddServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>SubServlet</servlet-name>
+  	<servlet-class>com.app.SubServlet</servlet-class>
+  </servlet>
+  
+ 
+  
+  <servlet-mapping>
+  	<servlet-name>ValidateServlet</servlet-name>
+  	<url-pattern>/ValidateServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddServlet</servlet-name>
+  	<url-pattern>/AddServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>SubServlet</servlet-name>
+  	<url-pattern>/SubServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
